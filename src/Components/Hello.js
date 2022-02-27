@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Hello = (props) => {
   return (
-    <div><h1>Oooyaaa {props.name} aka {props.Power}</h1></div>
-  )
-}
+    <div>
+     <h1>Hello {props.name} also known as {props.Habit}</h1>
+    </div>
+  );
+};
 
-export default Hello
+export default Hello;
