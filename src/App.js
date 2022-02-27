@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import Hello from './Components/Hello';
+import {useState} from 'react';
 import './App.css';
-
-function App() {
+const App = (user) => {
+  const [count, setcount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hello name = "Prajwal" Power = "Superman"/>
+      <Hello name = "Aman" Power = "Batman"/>
+      <Hello name = "Rishabh" Power = "Ironman"/>
+      <p>I am cumming {count} times</p>
+      <button onClick={() => setcount(count + 1)}>Lick me</button>
     </div>
   );
 }
 
-export default App;
+export default App
