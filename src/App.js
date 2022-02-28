@@ -63,16 +63,29 @@
 
 // export default App
 
+// import React from 'react'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <p>Enter Your Name</p>
+//       <input placeholder='Prajwal Pandey'></input>
+//       <p>Enetr your Mobile Numbe</p>
+//       <input placeholder='1000'></input>
+//       <button>Submit</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
+import TakeData from './Components/TakeData'
 
 const App = () => {
   return (
     <div>
-      <p>Enter Your Name</p>
-      <input placeholder='Prajwal Pandey'></input>
-      <p>Enetr your Mobile Numbe</p>
-      <input placeholder='1000'></input>
-      <button>Submit</button>
+      <TakeData/>
     </div>
   )
 }
