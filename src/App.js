@@ -79,14 +79,32 @@
 
 // export default App
 
-import React from 'react'
+import React, { Component } from 'react'
+import './App.css';
+import db from './Firebase';
+class App extends Component {
 
-const App = () => {
-  return (
-    <div>
-      <h1 style = {"text-align: center"}>Hello FireBase</h1>
-    </div>
-  );
+  state = {
+    text : ""
+  }
+
+  handleText = e => {
+    this.setState({
+      text : e.target.value
+    })
+  }
+  handleSubmit=e=>{
+    console.log(this.state)
+  }
+  render() {
+    return (
+      <div>
+        <p>Enter your name</p>
+        <input onChange={this.handleText} placeholder='Name'/> 
+        <button onClick={this.handleSubmit}>Submit</button>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
