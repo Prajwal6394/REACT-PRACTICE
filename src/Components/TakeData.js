@@ -4,8 +4,8 @@ import db from "../firebase";
 
 const TakeData = () => {
   const [name, setname] = useState("");
-  const [Mobile, Setnum] = useState("");
-  const [College, setcollge] = useState("");
+  const [mobile, Setnum] = useState("");
+  const [college, setcollege] = useState("");
   const sub = (e) => {
     e.preventDefault();
 
@@ -35,7 +35,7 @@ const TakeData = () => {
           <br/>
           <br/>
 
-          <input type = "text" placeholder="BBDNIIT" onChange={(e) => {setcollge(e.target.value)}}/>
+          <input type = "text" placeholder="BBDNIIT" onChange={(e) => {setcollege(e.target.value)}}/>
           <br/>
           <br/>
           <button type = "submit">Submit</button>
