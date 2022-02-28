@@ -80,14 +80,13 @@
 // export default App
 
 import React from 'react'
-import TakeData from './Components/TakeData'
 
 const App = () => {
   return (
     <div>
-      <TakeData/>
+      <h1 style = {"text-align: center"}>Hello FireBase</h1>
     </div>
-  )
+  );
 }
 
 export default App;
